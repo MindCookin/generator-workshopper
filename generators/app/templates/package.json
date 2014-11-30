@@ -1,0 +1,19 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "<%= name %>.js",
+  "devDependencies": {
+    "workshopper": "~1.3.3",
+    "workshopper-exercise": "~1.1.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    <% _.forEach(keywords, function(name) { %>"<%- name %>",<% }); %>"workshop"
+  ],
+  "author": "<%= author %>",
+  "license": "ISC"
+}
+
