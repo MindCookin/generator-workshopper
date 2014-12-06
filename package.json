@@ -2,6 +2,7 @@
   "name": "generator-workshopper",
   "version": "0.1.0",
   "description": "A generator for the marvelous workshopper from nodeschool.io",
+  "repository": "git@github.com:MindCookin/generator-workshopper.git",
   "keywords": [
     "yeoman-generator",
     "workshopper"
@@ -12,14 +13,18 @@
     "workshopper-exercise": "~1.1.0"
   },
   "devDependencies": {
+    "istanbul": "^0.3.4",
     "mem-fs": "^1.0.0",
     "mem-fs-editor": "^1.0.1",
-    "mocha": "~2.0.1",
+    "mocha": "^2.0.1",
+    "mocha-istanbul": "^0.2.0",
+    "should": "^4.3.0",
+    "sinon": "^1.12.1",
     "yosay": "^1.0.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- generators/**/*.js -R spec"
   },
   "author": "",
   "license": "ISC"
