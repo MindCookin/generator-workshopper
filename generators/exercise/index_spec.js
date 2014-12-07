@@ -10,8 +10,6 @@ describe('workshopper exercise', function () {
 
       helpers.run(path.join( __dirname, '../exercise'))
         .inDir(path.join( __dirname, '../../tmp'), function (dir) {
-        //var donne = this.async();
-        //fs.copy(path.join(__dirname, '../app/templates/exercises/'), dir + '/exercises', donne);
          fs.copySync(path.join(__dirname, '../app/templates/exercises/'), dir + '/exercises');
         })
         .withPrompt({ 
