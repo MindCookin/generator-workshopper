@@ -1,1 +1,1 @@
-// code stuff here
+console.log(process.argv);
