@@ -12,7 +12,7 @@ describe('workshopper', function () {
           name: 'foo',
           description: 'foo workshopper generator',
           author: 'me',
-          keyword: 'bar baz'
+          keywords: 'bar baz'
         })          // Mock the prompt answers
         .on('ready', function (generator) {
           // this is called right before `generator.run()` is called
@@ -27,11 +27,5 @@ describe('workshopper', function () {
     it('generate initial exercise content', function () {
       assert.file(['exercises/foo/exercise.js', 'exercises/foo/problem.md', 'exercises/foo/solution/solution.js']);
     });
-
-    it('default package.json contents are ok', function () {
-      
-    });
-    it('generate custom package.json content');
-    it('validate entries');
   });
 });

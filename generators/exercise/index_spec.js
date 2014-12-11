@@ -38,7 +38,7 @@ describe('workshopper exercise', function () {
       });
 
     it('fails if exercise exists', function () {
-    
+      assert.noFile(['exercises/bar/exercise.js', 'exercises/bar/problem.md', 'exercises/bar/solution/solution.js']);
     });
   });
 });
