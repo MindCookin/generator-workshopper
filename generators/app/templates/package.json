@@ -13,7 +13,9 @@
   "keywords": [
     <% _.forEach(keywords, function(name) { %>"<%- name %>",<% }); %>"workshop"
   ],
-  "main": "app.js",
+  "bin": {
+    "<%= name %>": "./app.js"
+  },
   "author": "<%= author %>",
   "license": "ISC"
 }
