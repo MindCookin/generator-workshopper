@@ -8,7 +8,7 @@
     "workshopper-exercise": "~1.1.0"
   },
   "scripts": {
-    "<%= name %>": "./app.js"
+    "start": "./app.js"
   },
   "keywords": [
     <% _.forEach(keywords, function(name) { %>"<%- name %>",<% }); %>"workshop"
