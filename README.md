@@ -24,3 +24,10 @@ To add a new exercise run `yo workshopper:exercise`, optionally passing an exerc
 ```
 yo workshopper:exercise [name]
 ```
+
+You can try your workshop locally just runnnig `npm start`:
+```
+npm start
+```
+
+Happy coding ^_^
