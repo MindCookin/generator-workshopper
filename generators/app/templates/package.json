@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "<%= description %>",
   "main": "<%= name %>.js",
   "devDependencies": {
@@ -8,7 +8,7 @@
     "workshopper-exercise": "~1.1.0"
   },
   "scripts": {
-    "test": "test"
+    "<%= name %>": "./app.js"
   },
   "keywords": [
     <% _.forEach(keywords, function(name) { %>"<%- name %>",<% }); %>"workshop"
