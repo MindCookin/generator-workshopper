@@ -1,6 +1,6 @@
 {
   "name": "generator-workshopper",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A generator for the marvelous workshopper from nodeschool.io",
   "repository": "MindCookin/generator-workshopper",
   "keywords": [
@@ -17,8 +17,12 @@
     "yosay": "^1.0.0"
   },
   "devDependencies": {
+    "fs-extra": "^0.12.0",
     "istanbul": "^0.3.4",
-    "mocha": "^2.0.1"
+    "mem-fs": "^1.0.0",
+    "mem-fs-editor": "^1.0.1",
+    "mocha": "^2.0.1",
+    "vinyl": "^0.4.6"
   },
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- generators/**/*.js -R spec"
