@@ -1,6 +1,11 @@
 var generators = require('yeoman-generator'),
     path = require('path'),
-    yosay = require('yosay');
+    yosay = require('yosay'),
+    utils = {
+      filterSpaces: function (string) {
+        return string.trim().split(' ');
+      }
+    };
 
 module.exports = generators.Base.extend({
 
@@ -33,7 +38,7 @@ module.exports = generators.Base.extend({
       name    : 'keywords',
       message : 'Provide some keywords, separated by whitespaces',
       default : '',
-      filter  : function (answer) { return answer.trim().split(' ');}
+      filter  : utils.filterSpaces
     }], function (answers) {
       
       this.answers = answers;
@@ -69,3 +74,5 @@ module.exports = generators.Base.extend({
     this.installDependencies();
   }
 });
+
+module.exports.utils = utils;

@@ -1,6 +1,7 @@
 var helpers = require('yeoman-generator').test
   , assert = require('yeoman-generator').assert
-  , path = require('path');
+  , path = require('path')
+  , utils = require('./index.js').utils;
 
 describe('workshopper', function () {
   describe('creating a new workshopper', function () {
@@ -26,6 +27,10 @@ describe('workshopper', function () {
 
     it('generate initial exercise content', function () {
       assert.file(['exercises/foo/exercise.js', 'exercises/foo/problem.md', 'exercises/foo/solution/solution.js']);
+    });
+
+    it('filters spaces inbetween keywords', function () {
+      utils.filterSpaces('foo bar baz');
     });
   });
 });
