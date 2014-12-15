@@ -13,6 +13,7 @@
   "keywords": [
     <% _.forEach(keywords, function(name) { %>"<%- name %>",<% }); %>"workshop"
   ],
+  "main": "app.js",
   "author": "<%= author %>",
   "license": "ISC"
 }
