@@ -1,6 +1,6 @@
 {
   "name": "generator-workshopper",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A generator for the marvelous workshopper from nodeschool.io",
   "repository": "MindCookin/generator-workshopper",
   "keywords": [
