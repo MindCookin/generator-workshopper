@@ -35,4 +35,5 @@ Happy coding ^_^
 Credits
 ---
 
-People behind [workshopper](https://github.com/rvagg/workshopper) and [yeoman](https://github.com/yeoman/yeoman)
+People behind [workshopper](https://github.com/rvagg/workshopper) and [yeoman](https://github.com/yeoman/yeoman).
+Checkout [nodeschool.io](http://nodeschool.io/) for ideas.
