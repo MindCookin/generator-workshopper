@@ -31,3 +31,8 @@ npm start
 ```
 
 Happy coding ^_^
+
+Credits
+---
+
+People behind [workshopper](https://github.com/rvagg/workshopper) and [yeoman](https://github.com/yeoman/yeoman)
